@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:elevation="50dp"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/placeImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/placesNameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/placeImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:text="productAdi"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:fontFamily="Work Sans Medium"/>
+
+            <TextView
+                android:id="@+id/placesAdresTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/placeImage"
+                android:layout_below="@+id/placesNameTxt"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="11dp"
+                android:textColor="@color/white"
+                android:text="adres"
+                android:textSize="10dp"
+                android:textStyle="italic" />
+
+
+            <TextView
+                android:id="@+id/mesafeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mesafe"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
