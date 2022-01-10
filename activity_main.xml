@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp">
+
+    <TextView
+        android:id="@+id/txtMesafe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="1 km"
+        android:layout_toRightOf="@+id/mesafeTxt"/>
+
+    <TextView
+        android:id="@+id/mesafeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Mesafe: "
+        android:layout_alignParentLeft="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <SeekBar
+        android:id="@+id/distBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:thumbTint="@color/colorYellow"
+        android:progressTint="@color/colorPrimary"/>
+
+    <ImageButton
+        android:id="@+id/imgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70sp"
+        android:background="#00000000"
+        android:elevation="10dp"
+        android:onClick="eczGit"
+        android:src="@drawable/ecz" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="eczane"
+        android:layout_below="@+id/imgBtn"
+        android:layout_marginLeft="35dp"
+        android:layout_alignParentLeft="true">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/btnHastane"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78sp"
+        android:onClick="hastaneBtn"
+        android:background="#00000000"
+        android:elevation="10dp"
+        android:src="@drawable/hospital"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hastane"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/btnHastane"
+        android:layout_centerInParent="true">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/btnOkul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/btnRest"
+        android:background="#00000000"
+        android:onClick="okulBtn"
+        android:elevation="10dp"
+        android:src="@drawable/ic_okul_ikon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="okul"
+        android:layout_below="@+id/btnOkul"
+        android:layout_marginLeft="47dp"
+        android:layout_alignParentLeft="true">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/btnRest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/imgBtn"
+        android:background="#00000000"
+        android:elevation="10dp"
+        android:onClick="restBtn"
+        android:src="@drawable/restaurant"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="restaurant"
+        android:layout_below="@+id/btnRest"
+        android:layout_marginLeft="23dp"
+        android:layout_alignParentLeft="true">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/btnCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btnHastane"
+        android:background="#00000000"
+        android:elevation="10dp"
+        android:onClick="carBtn"
+        android:src="@drawable/ic_car"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="oto tamir"
+        android:layout_below="@+id/btnRest"
+        android:layout_centerHorizontal="true">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/btnBankamatik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="33dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnDent"
+        android:layout_marginTop="33dp"
+        android:background="#00000000"
+        android:elevation="10dp"
+        android:onClick="btnBankamatik"
+        android:src="@drawable/atm"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnBankamatik"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="27dp"
+        android:text="bankamatik">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/btnDent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentRight="true"
+        android:background="#00000000"
+        android:elevation="10dp"
+        android:onClick="disciClick"
+        android:src="@drawable/disci"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="diş hekimi"
+        android:layout_below="@+id/btnDent"
+        android:layout_marginRight="35dp"
+        android:layout_alignParentRight="true">
+
+    </TextView>
+
+
+    <ImageButton
+        android:id="@+id/btnTesisat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/btnCar"
+        android:background="#00000000"
+        android:elevation="10dp"
+        android:onClick="tesisatClick"
+        android:src="@drawable/tesisat"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tesisatçı"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/btnTesisat"
+        android:layout_centerHorizontal="true">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/btnMuze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnBankamatik"
+        android:layout_marginTop="35dp"
+        android:background="#00000000"
+        android:elevation="10dp"
+        android:onClick="btnMuze"
+        android:src="@drawable/museum"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnMuze"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="47dp"
+        android:text="müze">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/btnVeteriner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/btnOkul"
+        android:background="#00000000"
+        android:onClick="veterinerBtn"
+        android:elevation="10dp"
+        android:src="@drawable/veteriner" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="veteriner"
+        android:layout_below="@+id/btnVeteriner"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentLeft="true">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/btnAvukat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/btnTesisat"
+        android:background="#00000000"
+        android:elevation="10dp"
+        android:onClick="avukatBtn"
+        android:src="@drawable/avukat"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="avukat"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/btnAvukat"
+        android:layout_centerHorizontal="true">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/btnOtel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnMuze"
+        android:layout_marginTop="45dp"
+        android:background="#00000000"
+        android:elevation="10dp"
+        android:onClick="otelBtn"
+        android:src="@drawable/otel"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnOtel"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="47dp"
+        android:text="otel">
+
+    </TextView>
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9349414303719848/9549006557">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
